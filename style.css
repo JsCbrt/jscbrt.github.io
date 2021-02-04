@@ -91,6 +91,7 @@ header a:hover{
     background: url('./img/code.jpg') no-repeat 0 -100px;
     text-align: center;
     color: white;
+    margin-bottom: 35px;
 }
 
 #showcase h1{
@@ -105,27 +106,6 @@ header a:hover{
     font-size: 24px;
     -webkit-text-stroke-width: 0.7px;
     -webkit-text-stroke-color: black;
-}
-
-#newsletter{
-    padding: 15px;
-    color: white;
-    background: #5d5d5d;
-}
-
-#newsletter h1{
-    float: left;
-}
-
-#newsletter form{
-    float: right;
-    margin-top: 15px;
-}
-
-#newsletter input[type="email"]{
-    padding: 4px;
-    height: 25px;
-    width: 250px;
 }
 
 #boxShowcase{
@@ -148,5 +128,8 @@ header a:hover{
     border-top: black 2px dotted;
 }
 
-
+#email{
+    margin-top: 18px;
+    margin-left: 255px;
+}
 

@@ -35,7 +35,3 @@ function ContactFiverr(){
 function ContactEmail(){
     location.href="mailto:jason.cabart@gmail.com";
 }
-
-function AddToNewsletter(email){
-    
-}
