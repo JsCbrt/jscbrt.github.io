@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="description" content="Personal portfolio website">
+        <meta name="keywords" content="jscbrt, jason, cabart, portfolio, jason cabart">
+        <meta name="author" content="Jason Cabart">
+        <title>JsCbrt | Games</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div id="branding">
+                    <h1><span class="highlight">Jason </span> Cabart</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li class="current"><a href="games.html">Games</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="newsletter">
+            <div class="container">
+                <h1>Subscribe To My Newsletter</h1>
+                <form action="">
+                    <input type="email" placeholder="Enter Email...">
+                    <button type="submit" class="mainButton">Subscribe</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="boxShowcase">
+            <div class="container">
+                <div class="box">
+                    <img src="./img/baghdatis_sim_logo.png" alt="Baghdatis Simulator">
+                    <h3>Baghdatis Simulator</h3>
+                    <p>Baghdatis Simulator is a clicker game where each click represents a broken racquet. The goal for the player is to smash as many racquets as possible</p>
+                    <button type="submit" class="mainButton" onclick="LearnMore(0)">Learn More</button>
+                </div>
+                <div class="box">
+                    <img src="./img/family_mon_logo.png" alt="Family-Mon">
+                    <h3>Family-Mon</h3>
+                    <p>This is a recreation of the popular game Pokemon, with my family replacing the creatures</p>
+                    <button type="submit" class="mainButton" onclick="LearnMore(1)">Learn More</button>
+                </div>
+                <div class="box">
+                    <img src="./img/sjoelbak_logo.png" alt="Sjoelbak">
+                    <h3>Sjoelbak</h3>
+                    <p>This is a recreation of the dutch wooden board game, Sjoelbak for Android&trade;</p>
+                    <button type="submit" class="mainButton" onclick="LeanrMore(2)">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Jason Cabart, Copyright &copy; 2021</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>
