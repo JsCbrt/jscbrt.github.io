@@ -1,77 +1,93 @@
+<!--
+STEAM-STYLE GAME PORTFOLIO (PLAIN HTML / CSS / JS)
+Single-file version for easy local testing
+Open this file directly in a browser or via a local server
+-->
+
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <meta name="description" content="Personal portfolio website">
-        <meta name="keywords" content="jscbrt, jason, cabart, portfolio, jason cabart">
-        <meta name="author" content="Jason Cabart">
-        <title>JsCbrt | Home</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div id="branding">
-                    <h1><span class="highlight">Jason </span> Cabart</h1>
-                </div>
-                <nav>
-                    <ul>
-                        <li class="current"><a href="index.html">Home</a></li>
-                        <li><a href="games.html">Games</a></li>
-                        <li><a href="about.html">About</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JsCbrt Game Portfolio</title>
 
-        <section id="showcase">
-            <div class="container">
-                <h1>Recreational Game Developer</h1>
-                <p>Hi! I am a recreational game developer. I've been working on projects for 4 years and acquired a good understanding of the programming involved in game making on the Unity engine. I can help you make any script you want in a timely manner for a very reasonable price</p>
-            </div>
-        </section>
+  <!-- Steam-like font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-        <section id="boxShowcase">
-            <div class="container">
-                <div class="box">
-                    <img src="./img/unity logo.png" alt="Unity Logo">
-                    <h3>Unity Engine Logic</h3>
-                    <p>I will code behaviours specifically made for the Unity engine.</p>
-                </div>
-                <div class="box">
-                    <img src="./img/csharp logo.png" alt="Csharp Logo">
-                    <h3>Efficient Coding</h3>
-                    <p>I will make code that is light on the computer's resources and that will execute quickly</p>
-                </div>
-                <div class="box">
-                    <img src="./img/clock logo.png" alt="Clock">
-                    <h3>Quick Work</h3>
-                    <p>I work quickly, intensively and efficently. Therefore, it won't take me long to complete your request</p>
-                </div>
-            </div>
+<header>
+  <h1>JsCbrt Game Portfolio</h1>
+</header>
 
-        </section>
+<div class="container">
 
-        <section id="boxShowcase">
-            <div class="container">
-                <div class="box">
-                    <img src="./img/fiverr logo.png" alt="Fiverr logo">
-                    <h3>Contact me through Fiverr&trade;</h3>
-                    <button class="mainButton" onclick="ContactFiverr()">Contact</button>
-                </div>
-                <div class="box" id="email">
-                    <img src="./img/email logo.png" alt="Email logo">
-                    <h3>Contact me through email</h3>
-                    <button class="mainButton" onclick="ContactEmail()">Contact</button>
-                </div>
-            </div>
-        </section>
+  <!-- STORE PAGE -->
+  <div id="store" class="store-grid"></div>
+
+  <!-- GAME PAGE -->
+  <div id="gamePage" class="game-page">
+    <div>
+      <a href="#" class="back-link" onclick="goBack()">← Back to Store</a>
+      <h2 id="gameTitle"></h2>
+      <div class="carousel">
+        <button class="carousel-btn left" onclick="prevShot()">❮</button>
+        <img id="carouselImage" class="carousel-image" />
+        <button class="carousel-btn right" onclick="nextShot()">❯</button>
+      </div>
+      <div class="thumbnails" id="thumbnails"></div>
+    </div>
+
+    <div class="sidebar">
+      <span id="gameStatus" class="status-badge"></span>
+      <p id="gameDescription"></p>
+
+      <h3>Features</h3>
+      <ul id="features"></ul>
+
+      <h3>Controls</h3>
+      <ul id="controls"></ul>
+
+      <a id="steamLink" class="steam-button" target="_blank">View In Store</a>
+    </div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+<footer>
+<div class="footer-inner">
+<div class="footer-name">© <span id="footerName">JsCbrt</span></div>
 
 
-        <footer>
-            <p>Jason Cabart, Copyright &copy; 2021</p>
-        </footer>
-    </body>
-    <script src="./script.js"></script>
+<div class="footer-links">
+<!-- Email -->
+<a href="mailto:jason.cabart@gmail.com" title="Email">
+  <img src="img/SVG/email.svg" width="20px">
+</a>
+
+
+<!-- Fiverr -->
+<a href="https://www.fiverr.com/jscbrt" target="_blank" title="Fiverr">
+  <img src="img/SVG/fiverr.svg" width="20px">
+  </a>
+
+
+<!-- GitHub -->
+<a href="https://github.com/JsCbrt" target="_blank" title="GitHub">
+  <img src="img/SVG/github.svg" width="20px">
+</a>
+
+
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/in/jason-cabart-2b8305212" target="_blank" title="LinkedIn">
+  <img src="img/SVG/linkedin.svg" width="20px">
+</a>
+</div>
+</div>
+</footer>
+
+</body>
 </html>
