@@ -1,93 +1,92 @@
-<!--
-STEAM-STYLE GAME PORTFOLIO (PLAIN HTML / CSS / JS)
-Single-file version for easy local testing
-Open this file directly in a browser or via a local server
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JsCbrt Game Portfolio</title>
-
-  <!-- Steam-like font -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bouncebyte Studios — Game Portfolio</title>
+  <meta name="description" content="Bouncebyte Studios — our released, in-development and upcoming games.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Chakra+Petch:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <!--<link rel="icon" type="image/x-icon" href="img/bouncebyte studios logo shape.ico">-->
 </head>
-<body>
+<body class="page-home">
 
-<header>
-  <h1>JsCbrt Game Portfolio</h1>
-</header>
+  <header class="topbar">
+    <div class="wrap topbar-in">
+      <a class="brand" href="index.html">
+        <!-- Replace this placeholder with: <img class="brand-logo" src="img/logo.png" alt="Bouncebyte Studios logo"> -->
+        <img class="brand-logo" src="img/bouncebyte studios logo.png" alt="Bouncebyte Studios logo">
+        <span class="brand-name">Bouncebyte <em style="color: #FDb13D;">Studios</em></span>
+      </a>
+      <nav class="topnav" aria-label="Main">
+        <a class="topnav-link" href="#games">All games</a>
+      </nav>
+    </div>
+  </header>
 
-<div class="container">
+  <main>
+    <!-- ============ HERO: in development & planned ============ -->
+    <section class="hero" id="hero" aria-label="In development and upcoming games">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-grid">
 
-  <!-- STORE PAGE -->
-  <div id="store" class="store-grid"></div>
+        <a class="hero-main" id="heroMain" href="#" aria-disabled="true">
+          <div class="hero-art" id="heroArt" aria-hidden="true">
+            <span class="hero-num" id="heroNum"></span>
+          </div>
+          <div class="hero-scrim" aria-hidden="true"></div>
 
-  <!-- GAME PAGE -->
-  <div id="gamePage" class="game-page">
-    <div>
-      <a href="#" class="back-link" onclick="goBack()">← Back to Store</a>
-      <h2 id="gameTitle"></h2>
-      <div class="carousel">
-        <button class="carousel-btn left" onclick="prevShot()">❮</button>
-        <img id="carouselImage" class="carousel-image" />
-        <button class="carousel-btn right" onclick="nextShot()">❯</button>
+          <div class="hero-content" id="heroContent">
+            <div class="hero-copy" id="heroCopy"></div>
+          </div>
+
+          <div class="hero-empty" id="heroEmpty" hidden>
+            <div class="hero-empty-box">
+              <span class="hero-empty-icon" aria-hidden="true"></span>
+              <p class="hero-empty-title">No future game is currently in development</p>
+              <p class="hero-empty-sub">New projects will appear here the moment work begins.</p>
+            </div>
+          </div>
+        </a>
+
+        <aside class="hero-side" id="heroSide">
+          <div class="side-head">
+            <h2>Upcoming &amp; in progress</h2>
+            <span class="side-count" id="heroCount"></span>
+          </div>
+          <div class="side-list" id="sideList"></div>
+          <p class="side-foot">Progress details on every game page.</p>
+        </aside>
+
       </div>
-      <div class="thumbnails" id="thumbnails"></div>
+    </section>
+
+    <!-- ============ GAME GRID ============ -->
+    <section class="games" id="games">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 class="sec-title">All games</h2>
+          <span class="sec-count" id="gridCount"></span>
+        </div>
+        <div class="filters" id="filters" aria-label="Filter games by status"></div>
+        <div class="grid" id="grid"></div>
+        <p class="grid-empty" id="gridEmpty" hidden>No games with this status yet — check back soon.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap foot-in">
+      <span>© <span id="yr"></span> Bouncebyte Studios</span>
+      <span class="foot-note">Placeholder art — final screenshots coming soon.</span>
     </div>
+  </footer>
 
-    <div class="sidebar">
-      <span id="gameStatus" class="status-badge"></span>
-      <p id="gameDescription"></p>
+  <noscript><p class="noscript">This portfolio needs JavaScript enabled to display the games.</p></noscript>
 
-      <h3>Features</h3>
-      <ul id="features"></ul>
-
-      <h3>Controls</h3>
-      <ul id="controls"></ul>
-
-      <a id="steamLink" class="steam-button" target="_blank">View In Store</a>
-    </div>
-  </div>
-
-</div>
-
-<script src="script.js"></script>
-
-<footer>
-<div class="footer-inner">
-<div class="footer-name">© <span id="footerName">JsCbrt</span></div>
-
-
-<div class="footer-links">
-<!-- Email -->
-<a href="mailto:jason.cabart@gmail.com" title="Email">
-  <img src="img/SVG/email.svg" width="20px">
-</a>
-
-
-<!-- Fiverr -->
-<a href="https://www.fiverr.com/jscbrt" target="_blank" title="Fiverr">
-  <img src="img/SVG/fiverr.svg" width="20px">
-  </a>
-
-
-<!-- GitHub -->
-<a href="https://github.com/JsCbrt" target="_blank" title="GitHub">
-  <img src="img/SVG/github.svg" width="20px">
-</a>
-
-
-<!-- LinkedIn -->
-<a href="https://www.linkedin.com/in/jason-cabart-2b8305212" target="_blank" title="LinkedIn">
-  <img src="img/SVG/linkedin.svg" width="20px">
-</a>
-</div>
-</div>
-</footer>
-
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
