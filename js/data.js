@@ -158,6 +158,21 @@ const GAMES = [
     accent: '#ffb454', accentDeep: '#33200a', motif: 'void',
     shots: placeholderShots(),//shots: [{src: "img/fluxion.png", ratio: 'landscape'}],
   },
+  {
+    id: 'data-thefter',
+    title: 'Data Thefter',
+    tagline: 'Infiltrate grab the tech, get out',
+    genres: ['Infiltration', 'Stealth'],
+    short: 'They upped the price of RAM, why not get it for free instead?',
+    description: 'Infiltrate the newest innovative data centers and collect as much equipment as you possibly can. Watch out for the guards, they are roaming around and are not so eager to lose their job in this economy! They will do everything to catch you!',
+    platform: 'PC',
+    status: 'planned',
+    releaseDate: 'Q4 2026',
+    progress: 3,
+    link: null,
+    accent: '#177526', accentDeep: '#051c09', motif: 'pixels',
+    shots: placeholderShots(),//shots: [{src: "img/fluxion.png", ratio: 'landscape'}],
+  }
 ];
 
 const getGame = (id) => GAMES.find((g) => g.id === id);
