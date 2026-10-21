@@ -57,7 +57,7 @@ const GAMES = [
     status: 'released',
     releaseDate: 'November 2020',
     progress: 100,
-    link: 'https://bouncebyte.example/360-arena', // TODO: replace with real store URL
+    link: 'https://jscbrt.itch.io/360-arena',
     accent: '#43c6e8', accentDeep: '#0e3a52', motif: 'grid',
     shots: [{src: "img/360-arena.png", ratio: 'landscape'},
         {src: "img/360-arena2.png", ratio: 'landscape'}
@@ -74,7 +74,7 @@ const GAMES = [
     status: 'released',
     releaseDate: 'August 2024',
     progress: 100,
-    link: 'https://bouncebyte.example/floor-is-lava', // TODO: replace with real store URL
+    link: 'https://jscbrt.itch.io/the-floor-is-lava',
     accent: '#ff7a3a', accentDeep: '#571a0b', motif: 'lava',
     shots: [{src: "img/tfil.png", ratio: 'landscape'},
         {src: "img/tfil2.png", ratio: 'landscape'},
@@ -93,7 +93,7 @@ const GAMES = [
     status: 'released',
     releaseDate: 'September 2024',
     progress: 100,
-    link: 'https://bouncebyte.example/dungeon-survival', // TODO: replace with real store URL
+    link: 'https://jscbrt.itch.io/dungeon-survival',
     accent: '#63d68c', accentDeep: '#0d3524', motif: 'dots',
     shots: [{src: "img/dungeonS.png", ratio: 'landscape'},
         {src: "img/dungeonS2.png", ratio: 'landscape'},
@@ -132,7 +132,7 @@ const GAMES = [
     status: 'released',
     releaseDate: 'July 2026',
     progress: 100,
-    link: 'https://bouncebyte.example/fluxion', // TODO: replace with real store URL
+    link: 'https://jscbrt.itch.io/fluxion',
     accent: '#9b8cff', accentDeep: '#221a4e', motif: 'rings',
     shots: [{src: "img/fluxion.png", ratio: 'landscape'},
         {src: "img/fluxion2.png", ratio: 'landscape'},
@@ -146,7 +146,7 @@ const GAMES = [
   {
     id: 'blackout-protocol',
     title: 'Blackout Protocol',
-    tagline: 'Horror puzzle — hide, find, reroute',
+    tagline: 'Horror puzzle — find & reroute power',
     genres: ['Horror', 'Puzzle'],
     short: 'What happens when the lights cut out?',
     description: 'Survive from room to room while hiding from a monster attracted by your every move! Find clues, use the terminal and reroute the power to chase the monster away!',
@@ -156,7 +156,7 @@ const GAMES = [
     progress: 2,
     link: null,
     accent: '#ffb454', accentDeep: '#33200a', motif: 'void',
-    shots: placeholderShots(),//shots: [{src: "img/fluxion.png", ratio: 'landscape'}],
+    shots: placeholderShots(),
   },
   {
     id: 'data-thefter',
@@ -171,7 +171,7 @@ const GAMES = [
     progress: 3,
     link: null,
     accent: '#177526', accentDeep: '#051c09', motif: 'pixels',
-    shots: placeholderShots(),//shots: [{src: "img/fluxion.png", ratio: 'landscape'}],
+    shots: placeholderShots(),
   }
 ];
 

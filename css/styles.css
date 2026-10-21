@@ -104,11 +104,11 @@ button{ font-family:inherit; }
   backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line-soft);
 }
-.topbar-in{ display:flex; align-items:center; justify-content:space-between; height:66px; }
+.topbar-in{ display:flex; align-items:center; justify-content:space-between; height:80px; }
 
 .brand{ display:flex; align-items:center; gap:12px; text-decoration:none; }
 .brand-logo{
-  width:42px; height:42px; border-radius:10px;
+  width:56px; height:56px; border-radius:10px;
   display:grid; place-items:center;
   font:700 15px/1 var(--font-display); letter-spacing:.04em; color:#fff;
   background:linear-gradient(135deg,#3f8fd2,#2fd4c0);
